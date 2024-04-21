@@ -5,10 +5,13 @@
   <groupId>org.example</groupId>
   <artifactId>test-automation-demo</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
 
   <name>test-automation-demo</name>
   <url>https://maven.apache.org</url>
+  <modules>
+    <module>cucumber-api-test</module>
+  </modules>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
