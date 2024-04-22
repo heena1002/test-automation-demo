@@ -1,6 +1,6 @@
 ## Automate Currency exchange API
 
-### It is a BDD project, I've implemented it using Cucumber with Rest Assured and have used Maven as build management tool, used cucumber reports for the reporting part. Logging part can be done using log4j2.
+### It is a BDD project, I've implemented it using Cucumber with Rest Assured and have used Maven as build management tool, used cucumber reports for the reporting part
 
 #### The test scripts are placed in src/test/resources/org/testapi/featurefiles and the step definition in src/test/java/org/testapi/stepdefinition
 #### To execute cucumber feature files, Runner class named "JunitRunner" is used which is placed in folder path "src/test/java/org/testapi/runner"
