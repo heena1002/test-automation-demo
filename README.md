@@ -9,3 +9,5 @@ For the reference I've attached screenshot below
 ![img.png](img.png)
 
 #### I'm reading the hostname and endpoint using properties file
+
+#### Utility class named TestUtils.java is placed inside "src/main/java/org/testapi/utils" package
