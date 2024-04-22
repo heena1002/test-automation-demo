@@ -9,6 +9,7 @@ import org.junit.Assert;
 import org.testapi.util.TestUtils;
 import java.io.File;
 import java.io.IOException;
+import static org.testapi.base.CommonRestAssuredMethods.*;
 
 public class CurrencyExchangeStepDefinitions {
     private Response response;
@@ -43,16 +44,12 @@ public class CurrencyExchangeStepDefinitions {
     @When("a {} call is made")
     public void aCallIsMade(String methodName) {
         String endpoint = TestUtils.getProperty("test.api.path");
-        aCallIsMadeToThePath(methodName, endpoint);
+        response= getResponse(methodName, endpoint);
     }
 
     @When("a {} call is made to the path {}")
     public void aCallIsMadeToThePath(String methodName, String endpoint) {
-        if (methodName.equals("get")) {
-            response = RestAssured.get(endpoint);
-        } else if (methodName.equals("post")) {
-            response = RestAssured.post(endpoint);
-        }
+        response = getResponse(methodName, endpoint);
     }
 
     @And("{string} price is in the range of {string} to {string}")

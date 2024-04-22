@@ -5,7 +5,7 @@ import java.io.InputStream;
 import java.util.Properties;
 
 public class TestUtils {
- private static final String propPath = "api-test.properties";
+ private static final String PROPERTY_FILE_PATH = "api-test.properties";
 
     public static InputStream getResourceFileAsInputStream(String fileName)
     {
@@ -26,7 +26,7 @@ public class TestUtils {
         Properties p = null;
         try
         {
-            InputStream in = getResourceFileAsInputStream(propPath);
+            InputStream in = getResourceFileAsInputStream(PROPERTY_FILE_PATH);
             p = new Properties();
 
             p.load(in);
